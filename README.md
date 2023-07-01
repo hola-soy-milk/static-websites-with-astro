@@ -1,4 +1,13 @@
-# Astro Starter Kit: Basics
+# Lesson 1 - Create an Astro Project
+
+## 01. Essential Concepts
+
+In this tutorial, we'll use [Astro](astro.build)
+Astro's `create astro` CLI tool offers loads of options for getting up and running as quickly as needed.
+
+We'll be using it for ours, too.
+
+> Note: This course will be done in a local development environment but you can also [spin up a quick Astro projecton Stackblitz](https://astro.new/basics?on=stackblitz).
 
 ```
 npm create astro@latest -- --template basics
