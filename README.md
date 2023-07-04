@@ -22,8 +22,36 @@ You'll be asked to select a few things:
 * TypeScript: Absolutely!
 * Last question: TypeScript strictness level. We'll go with the default
 
+After that, we're ready to start coding our Astro site!
 
+### Astro Project Structure
 
+Our generated project will have the following structure:
+
+.
+├── README.md
+├── astro.config.mjs
+├── package.json
+├── public
+│   └── favicon.svg
+├── src
+│   ├── components
+│   │   └── Card.astro
+│   ├── env.d.ts
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── tsconfig.json
+
+Amongst others, we see a file type unique to Astro...
+
+### The `.astro` file type
+
+If you're familiar with frameworks like React, Vue, or Svelte, this would
+be an approximate equivalent of a `.jsx`/`.tsx`, `.vue` or `.svelte` file,
+respectively.
+ 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
