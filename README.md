@@ -51,6 +51,10 @@ Amongst others, we see a file type unique to Astro...
 If you're familiar with frameworks like React, Vue, or Svelte, this would
 be an approximate equivalent of a `.jsx`/`.tsx`, `.vue` or `.svelte` file,
 respectively.
+
+### `./src/pages`
+
+If you've used 
  
 ## 🚀 Project Structure
 
