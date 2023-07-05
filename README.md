@@ -52,10 +52,13 @@ If you're familiar with frameworks like React, Vue, or Svelte, this would
 be an approximate equivalent of a `.jsx`/`.tsx`, `.vue` or `.svelte` file,
 respectively.
 
-### `./src/pages`
+### Page routing in `./src/pages`
 
-If you've used 
- 
+> Note: If you've used frameworks like Next.js before, this will feel very similar.
+
+Every `.astro` file created in this folder will become an individual page. So
+far, we only have an `index.astro` page.
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
