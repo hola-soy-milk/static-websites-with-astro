@@ -1,7 +1,5 @@
 # Lesson 1 - Create an Astro Project
 
-## 01. Essential Concepts
-
 In this tutorial, we'll use [Astro](astro.build) to build our static website.
 
 Astro's `create astro` CLI tool offers loads of options for getting up and running as quickly as needed.
@@ -24,7 +22,7 @@ You'll be asked to select a few things:
 
 After that, we're ready to start coding our Astro site!
 
-### Astro Project Structure
+## Astro Project Structure
 
 Our generated project will have the following structure:
 
@@ -46,56 +44,30 @@ Our generated project will have the following structure:
 
 Amongst others, we see a file type unique to Astro...
 
-### The `.astro` file type
+## The `.astro` file type
 
 If you're familiar with frameworks like React, Vue, or Svelte, this would
 be an approximate equivalent of a `.jsx`/`.tsx`, `.vue` or `.svelte` file,
 respectively.
 
-### Page routing in `./src/pages`
+## Page routing in `./src/pages`
 
 > Note: If you've used frameworks like Next.js before, this will feel very similar.
 
 Every `.astro` file created in this folder will become an individual page. So
-far, we only have an `index.astro` page.
+far, we only have an `index.astro` page. However, Astro will also recognise
+markdown `.md` files as pages too.
 
-## 🚀 Project Structure
+## Reusable components in `./src/components/`
 
-Inside of your Astro project, you'll see the following folders and files:
+Similar to other frameworks, we'll put our components here. We can already see a `Card.astro` one.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+We can also use components from other frameworks here, which we'll explore in a later lesson.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Running our app
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Now that we've poked around a little, let's run our app:
 
-Any static assets, like images, can be placed in the `public/` directory.
+    npm start
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Should all be working correctly, you'll be able to open [`http://localhost:3000`](http://localhost:3000) and be greeted by your app!
