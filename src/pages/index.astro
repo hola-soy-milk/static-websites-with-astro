@@ -1,25 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { queryReposForUser } from '../utils/githubRepos';
 import Card from '../components/Card.astro';
-import { queryReposForUser } from '../utils/gitHubRepos';
+import type Repo from '../types/Repo';
+
 const me = {
-  firstNames: 'Ramón Martín',
-  lastNames: 'Huidobro',
-  gitHubUsername: 'hola-soy-milk',
+  names: 'Ramón Martín',
+  lastName: 'Huidobro',
+  githubUsername: 'hola-soy-milk',
 };
 
-const fullName = [me.firstNames, me.lastNames].join(' ');
+const fullName = [me.names, me.lastName].join(' ');
 
-const reposWithImages = await queryReposForUser(me.gitHubUsername);
+const repos = await queryReposForUser(me.githubUsername);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={`${fullName}: Speaker, Developer, Educator`}>
   <main>
-    <h1 class="text-gradient">Hey there, I'm {me.firstNames}! 👋</h1>
-    <h2>GitHub Projects</h2>
-    <ul role="list" class="repo-grid">
-      {reposWithImages.map((repo: Repo) => <h3>{repo.name}</h3>)}
-    </ul>
+    <h1>Hey there, I'm <span class="text-gradient">{me.names}</span></h1>
+    <ul role="list">{repos.map((repo: Repo) => <li>{repo.name}</li>)}</ul>
   </main>
 </Layout>
 
