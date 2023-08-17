@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "astro": "^2.7.2"
+  },
+  "devDependencies": {
+    "open-graph-scraper": "^6.2.2"
   }
 }
